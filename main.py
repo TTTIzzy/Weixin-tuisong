@@ -15,7 +15,10 @@ app_id = os.environ["APP_ID"]
 app_secret = os.environ["APP_SECRET"]
 
 user_id = os.environ["USER_ID"]
+user_id2 = os.environ["USER_ID2"]
 template_id = os.environ["TEMPLATE_ID"]
+user_ids = os.environ["USER_IDS"]
+
 
 
 def get_weather():
@@ -60,6 +63,3 @@ data = {"low":{"value":low},"high":{"value":high},"weather":{"value":wea},"tempe
 #for user in user_ids:
     #res = wm.send_template(user, template_id, data)
     #print(res)
-    
-res = wm.send_template(user_id, template_id, data)
-print(res)
